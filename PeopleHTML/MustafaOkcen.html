@@ -1,0 +1,16 @@
+<head runat="server">
+    <title>Meta Tags Example</title>
+    <meta http-equiv="Refresh" content="2;url=person.asp" />
+</head>
+ <%
+	  	Set oConn = Server.CreateObject("ADODB.Connection")
+		oConn.Open("DRIVER={Microsoft Access Driver (*.mdb)}; DBQ=" & Server.MapPath("Veritabanim2.mdb"))
+		ssql="select * from Users; "
+		Set oRS = oConn.Execute(sSQL)
+
+		Do While NOT oRS.EOF 
+			
+		%>
+<form action="person.asp" method="POST">
+		<input type="" name="">
+</form>
